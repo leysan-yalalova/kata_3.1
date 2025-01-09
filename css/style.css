@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "TT Lakes Regular";
+  src: url("/fonts/TTLakes-Regular.eot");
+  src: url("/fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/TTLakes-Regular.woff") format("woff"),
+    url("/fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("/fonts/TTLakes-Medium.eot");
+  src: url("/fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/TTLakes-Medium.woff") format("woff"),
+    url("/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("/fonts/TTLakes-Bold.eot");
+  src: url("/fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/TTLakes-Bold.woff") format("woff"),
+    url("/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.range {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 62, 121);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 32px;
+  margin-top: 24px;
+}
+
+.container-top__left {
+  display: flex;
+  align-items: center;
+  font-family: "TT Lakes Bold", sans-serif;
+}
+
+.container-top__right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.leave-request,
+.status {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  font-family: "TT Lakes Medium", sans-serif;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+}
+
+.icon-title h1 {
+  color: #1b1c21;
+  padding-left: 30px;
+  font-size: 28px;
+}
+
+.container-middle {
+  display: flex;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  color: rgb(126, 126, 130);
+  font-size: 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "TT Lakes Regular", sans-serif;
+  cursor: pointer;
+}
+
+.list__item--removable-brands {
+  border: 2px solid rgb(184, 255, 236);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  min-width: 233px;
+}
+
+.list__item--additional-services {
+  min-width: 254px;
+}
+
+.list__item--device-repair {
+  min-width: 211px;
+}
+
+.list__item--price-services {
+  min-width: 152px;
+}
+
+.list__item--address {
+  min-width: 233px;
+}
+
+.list__item--special-prices {
+  min-width: 191px;
+}
+
+.list__item--reviews {
+  min-width: 95px;
+}
+
+.container-bottom {
+  display: flex;
+  margin: 7px 28.65px 49px 34px;
+  gap: 36px;
+}
+
+.left-information {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9.22px;
+  gap: 10px;
+}
+
+.explanation {
+  margin: 0;
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+/*.right-information {
+  max-width: 531px;
+  max-height: 307px;
+}*/
+
+.right-information img {
+  object-fit: cover;
+  border-radius: 6px;
+  background: rgb(248, 248, 248);
+}
+
+.read-more {
+  display: flex;
+  gap: 8px;
+  font-family: "TT Lakes Medium", sans-serif;
+}
+
+.read {
+  color: rgb(27, 28, 33);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.section {
+  width: 490px;
+  height: 160px;
+}
+
+@media (min-width: 1120px) {
+  header {
+    display: none;
+  }
+  .container-top {
+    margin-top: 42px;
+  }
+
+  .container-middle {
+    display: flex;
+    margin-left: 32px;
+    margin-top: 8px;
+  }
+
+  .list__item--device-repair {
+    display: none;
+  }
+}
+
+/* header для width 768px*/
+@media (max-width: 1120px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    height: 88px;
+    border-bottom: 1px solid rgb(217, 255, 245);
+  }
+
+  .header-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-right: 32px;
+  }
+
+  .divides {
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: rgb(234, 234, 234);
+  }
+
+  .cps {
+    width: 96.55px;
+    height: 50.81px;
+  }
+
+  .range-1 {
+    margin-left: 32px;
+  }
+
+  .range img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .container-top {
+    margin-right: 0;
+  }
+
+  .container-top__right {
+    display: none;
+  }
+
+  .list-services.address {
+    display: none;
+  }
+  li.removable-brands {
+    display: none;
+  }
+
+  .additional-services {
+    border: 2px solid rgb(184, 255, 236);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    width: 233px;
+  }
+
+  .continuation-2 {
+    display: none;
+  }
+
+  .container-bottom {
+    gap: 48px;
+    margin: 32px 25px 40px 24px;
+  }
+
+  .right-information {
+    width: 360px;
+    height: 208px;
+  }
+
+  .right-information img {
+    src: "img/img-3.jpeg";
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .list {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .section {
+    width: 312px;
+    height: 160px;
+  }
+
+  .read-more {
+    margin-top: 0;
+  }
+
+  .container-middle {
+    display: flex;
+    margin-left: 24px;
+    margin-top: 32px;
+  }
+}
+
+/* header для width 768px*/
+
+@media (max-width: 768px) {
+  .header-left .divides {
+    display: none;
+  }
+  .header-right .range:not(.range-2):not(.range-3) {
+    display: none;
+  }
+
+  .range-1 {
+    margin-left: 16px;
+  }
+
+  .header-right {
+    margin-right: 16px;
+  }
+  .header-left {
+    gap: 16px;
+  }
+
+  .container-top__right {
+    display: none;
+  }
+
+  .continuation-1 {
+    display: none;
+  }
+
+  .container-bottom {
+    flex-direction: column;
+    margin: 24px 0 27px 0;
+    gap: 16px;
+  }
+
+  .left-information {
+    padding-top: 0;
+    gap: 0;
+  }
+
+  .pharagraf {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+
+  .right-information {
+    width: 100%;
+    height: 100%;
+  }
+
+  .right-information img {
+    src: "img/img-3.jpeg";
+    border-radius: 0;
+  }
+
+  .list {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .section {
+    width: 292px;
+    height: 96px;
+    display: flex;
+  }
+
+  .read-more {
+    margin-top: 16px;
+  }
+
+  .explanation {
+    display: flex;
+    flex-direction: column;
+  }
+}
